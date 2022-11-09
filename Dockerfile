@@ -18,6 +18,6 @@ RUN R -e "Sys.setenv("NOT_CRAN" = TRUE); Sys.setenv("LIBARROW_MINIMAL" = FALSE);
 RUN R -e "remotes::install_github(c('eco4cast/EFIstandards','cboettig/aws.s3','rqthomas/cronR','eco4cast/score4cast','eco4cast/neon4cast','cboettig/prov', 'eco4cast/read4cast'))"
 RUN R -e "remotes::install_github(c('FLARE-forecast/GLM3r','rqthomas/glmtools','rqthomas/FLAREr'))"
 
-RUN install2.r renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts
+RUN install2.r renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet
 
 COPY cron.sh /etc/services.d/cron/run
