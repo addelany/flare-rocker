@@ -23,4 +23,4 @@ jobs:
           tags: rqthomas/flare-rocker:4.2.1arm
           context: "{{defaultContext}}:arm64"
           platforms: linux/amd64,linux/arm64
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
