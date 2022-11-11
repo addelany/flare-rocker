@@ -6,7 +6,7 @@ FROM rocker/r-ver:4.2.1
 
 #COPY --chown=${NB_USER} . ${HOME}
 
-RSTUDIO_VERSION="daily" /rocker_scripts/install_rstudio.sh
+RUN RSTUDIO_VERSION="daily" /rocker_scripts/install_rstudio.sh
 
 #USER root
 RUN apt-get update && apt-get -y install cron
