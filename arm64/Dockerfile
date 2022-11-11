@@ -21,7 +21,7 @@ RUN R -e "remotes::install_github('GLEON/rLakeAnalyzer', ref = 'e74974f740821110
 RUN R -e "remotes::install_github('FLARE-forecast/GOTMr')"
 RUN R -e "remotes::install_github('FLARE-forecast/SimstratR')"
 RUN R -e "remotes::install_github('aemon-j/gotmtools', ref = 'yaml')"
-RUN R -e "remotes::install_github("FLARE-forecast/LakeEnsemblR")"
+RUN R -e "remotes::install_github('FLARE-forecast/LakeEnsemblR')"
 RUN R -e "remotes::install_github('FLARE-forecast/FLARErLER')"
 
 RUN install2.r tidyverse renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet
