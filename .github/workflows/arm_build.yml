@@ -21,3 +21,4 @@ jobs:
         with:
           push: true
           tags: rqthomas/flare-rocker:4.2.1arm
+          context: "{{defaultContext}}:arm64"
