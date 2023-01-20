@@ -13,8 +13,8 @@ RUN apt-get update && apt-get -y install cron
 RUN apt-get update && apt-get -y install jags
 RUN apt-get update && apt-get -y install libgd-dev
 
-RUN install2.r devtools remotes
-RUN R -e "Sys.setenv("NOT_CRAN" = TRUE); Sys.setenv("LIBARROW_MINIMAL" = FALSE); Sys.setenv("LIBARROW_BINARY" = FALSE); install.packages('arrow')"
+RUN install2.r devtools remotes arrow
+#RUN R -e "Sys.setenv("NOT_CRAN" = TRUE); Sys.setenv("LIBARROW_MINIMAL" = FALSE); Sys.setenv("LIBARROW_BINARY" = FALSE); install.packages('arrow')"
 RUN R -e "remotes::install_github(c('eco4cast/EFIstandards','cboettig/aws.s3','rqthomas/cronR','eco4cast/score4cast','eco4cast/neon4cast','cboettig/prov', 'eco4cast/read4cast'))"
 #RUN R -e "remotes::install_github('GLEON/rLakeAnalyzer', ref = 'e74974f74082111065bd9cd759527f16608b3c82')"
 #RUN R -e "remotes::install_github('aemon-j/gotmtools', ref = 'yaml')"
