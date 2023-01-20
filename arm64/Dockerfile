@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.2.1
+FROM rocker/rstudio:latest-daily
 
 ## Declares build arguments
 #ARG NB_USER
@@ -6,7 +6,7 @@ FROM rocker/r-ver:4.2.1
 
 #COPY --chown=${NB_USER} . ${HOME}
 
-RUN RSTUDIO_VERSION="daily" /rocker_scripts/install_rstudio.sh
+RUN RSTUDIO_VERSION="daily" /rocker_scripts/install_geospatial.sh
 
 #USER root
 RUN apt-get update && apt-get -y install cron
