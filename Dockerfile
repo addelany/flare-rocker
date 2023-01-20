@@ -25,6 +25,6 @@ RUN R -e "remotes::install_github('aemon-j/gotmtools', ref = 'yaml')"
 RUN R -e "remotes::install_github('FLARE-forecast/LakeEnsemblR')"
 RUN R -e "remotes::install_github('FLARE-forecast/FLARErLER')"
 
-RUN install2.r renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet
+RUN install2.r renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet usethis
 
 COPY cron.sh /etc/services.d/cron/run
