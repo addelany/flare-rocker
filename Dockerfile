@@ -3,6 +3,7 @@ FROM rocker/geospatial:4.2.1
 ## Declares build arguments
 #ARG NB_USER
 #ARG NB_UID
+ARG GIT_ACCESS_TOKEN
 
 #COPY --chown=${NB_USER} . ${HOME}
 
