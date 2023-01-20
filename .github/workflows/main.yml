@@ -19,6 +19,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+          github-token: ${{ github.token }}
       - name: Build and push 1
         uses: docker/build-push-action@v3
         with:
