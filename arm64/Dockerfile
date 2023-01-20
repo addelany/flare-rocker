@@ -6,7 +6,7 @@ FROM rocker/rstudio:latest-daily
 
 #COPY --chown=${NB_USER} . ${HOME}
 
-RUN RSTUDIO_VERSION="daily" /rocker_scripts/install_geospatial.sh
+RUN /rocker_scripts/install_geospatial.sh
 
 #USER root
 RUN apt-get update && apt-get -y install cron
