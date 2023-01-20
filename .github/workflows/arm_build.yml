@@ -1,4 +1,4 @@
-name: arm
+name: build docker container ARM
 
 on:
   workflow_dispatch:
