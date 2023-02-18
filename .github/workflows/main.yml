@@ -24,4 +24,4 @@ jobs:
           push: true
           tags: rqthomas/flare-rocker:4.2.1
           secrets: |
-            GIT_ACCESS_TOKEN=${{ secrets.GIT_ACCESS_TOKEN }}
+            GIT_ACCESS_TOKEN=${{ secrets.GITHUB_TOKEN }}
