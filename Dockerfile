@@ -17,6 +17,7 @@ RUN apt-get update && apt-get -y install libgd-dev
 
 #USER ${NB_USER}
 
+Run R -e "Sys.setenv(GITHUB_PAT = ${id})"
 Run R -e "Sys.getenv()"
 
 RUN install2.r devtools remotes arrow renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet usethis
