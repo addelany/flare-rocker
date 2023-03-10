@@ -2,6 +2,8 @@ name: build docker container
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
   #push:
   #  branches:
   #    - 'main'
@@ -18,10 +20,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push 1
+      - name: Build and push
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: rqthomas/flare-rocker:4.2.1
-          secrets: |
-            GIT_ACCESS_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flare-rocker:4.2.1
+          build-args: GITHUB_PAT=${{ secrets.PAT }}
+
