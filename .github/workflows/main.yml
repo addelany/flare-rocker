@@ -24,6 +24,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flare-rocker:4.2.1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/flare-rocker:4.3.0
           build-args: GITHUB_PAT=${{ secrets.PAT }}
 
