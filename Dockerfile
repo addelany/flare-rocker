@@ -23,7 +23,7 @@ RUN R -e "devtools::install_github('cboettig/aws.s3')" && \
     R -e "devtools::install_github('eco4cast/neon4cast')" && \
     R -e "devtools::install_github('eco4cast/EFIstandards')" && \
     R -e "devtools::install_github('rqthomas/cronR')" && \
-    R -e "devtools::install_github('FLARE-forecast/GLM3r', ref = "glm_3.3.1a2_w_ice_fix") && \
+    R -e "devtools::install_github('FLARE-forecast/GLM3r', ref = 'glm_3.3.1a2_w_ice_fi') && \
     R -e "devtools::install_github('rqthomas/glmtools')" && \
     R -e "devtools::install_github('FLARE-forecast/FLAREr')" && \
     R -e "devtools::install_github('FLARE-forecast/GOTMr')" && \
