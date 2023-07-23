@@ -23,7 +23,6 @@ RUN R -e "devtools::install_github('eco4cast/score4cast')"
 RUN R -e "devtools::install_github('eco4cast/neon4cast')" 
 RUN R -e "devtools::install_github('eco4cast/EFIstandards')" 
 RUN R -e "devtools::install_github('rqthomas/cronR')" 
-RUN R -e "devtools::install_github('FLARE-forecast/GLM3r', ref = 'glm_3.3.1a2_w_ice_fix')" 
 RUN R -e "devtools::install_github('rqthomas/glmtools')" 
 RUN R -e "devtools::install_github('FLARE-forecast/FLAREr')" 
 RUN R -e "devtools::install_github('FLARE-forecast/GOTMr')" 
@@ -31,6 +30,7 @@ RUN R -e "devtools::install_github('FLARE-forecast/SimstratR')"
 RUN R -e "devtools::install_github('FLARE-forecast/LakeEnsemblR')" 
 RUN R -e "devtools::install_github('FLARE-forecast/FLARErLER')"
 RUN R -e "devtools::install_github('GLEON/rLakeAnalyzer', ref = 'e74974f74082111065bd9cd759527f16608b3c82')"
+RUN R -e "devtools::install_github('FLARE-forecast/GLM3r', ref = 'glm_3.3.1a2_w_ice_fix')" 
 
 RUN ldd /usr/local/lib/R/site-library/GLM3r/exec/nixglm
 
