@@ -1,4 +1,4 @@
-FROM rocker/geospatial:4.3.0
+FROM rocker/geospatial:4.3.2
 
 # Import GitHub Secret
 ARG GITHUB_PAT
