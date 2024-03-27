@@ -44,7 +44,7 @@ RUN R -e "devtools::install_github('FLARE-forecast/FLARErLER')"
 RUN sleep 180
 RUN R -e "devtools::install_github('GLEON/rLakeAnalyzer', ref = 'e74974f74082111065bd9cd759527f16608b3c82')"
 RUN sleep 180
-RUN R -e "devtools::install_github('FLARE-forecast/GLM3r', ref = 'glm_3.3.1a11')" 
+RUN R -e "devtools::install_github('FLARE-forecast/GLM3r')" 
 
 #RUN ldd /usr/local/lib/R/site-library/GLM3r/exec/nixglm
 
