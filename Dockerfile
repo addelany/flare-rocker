@@ -15,7 +15,7 @@ RUN apt-get update && apt-get -y install cron jags libgd-dev
 
 # USER ${NB_USER}
 
-RUN install2.r devtools remotes arrow renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet usethis tidymodels xgboost
+RUN install2.r devtools remotes arrow renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 bench contentid yaml RCurl here feasts gsheet usethis tidymodels xgboost rMR
 RUN R -e "devtools::install_github('cboettig/aws.s3')"
 RUN sleep 180
 RUN R -e "devtools::install_github('aemon-j/gotmtools', ref = 'yaml')"
