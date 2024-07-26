@@ -12,7 +12,7 @@ RUN apt-get update && apt-get -y install cron jags libgd-dev
 RUN install2.r devtools remotes renv RNetCDF forecast imputeTS ncdf4 scoringRules tidybayes tidync udunits2 RcppRoll
 RUN R -e "remotes::install_github(c('eco4cast/EFIstandards','cboettig/aws.s3','rqthomas/cronR','eco4cast/score4cast','eco4cast/neon4cast','cboettig/prov', 'eco4cast/read4cast'))"
 RUN sleep 180
-RUN R -e "install.packages("arrow", repos = "https://packagemanager.rstudio.com/all/__linux__/jammy/latest")"
+RUN R -e "install.packages('arrow', repos = 'https://packagemanager.rstudio.com/all/__linux__/jammy/latest')"
 RUN sleep 180
 RUN R -e "remotes::install_github('FLARE-forecast/GLM3r', ref = 'c692b700b833d5022031d3cde7bb50ffa09ab78e')"
 RUN sleep 180
